@@ -1,8 +1,8 @@
 class Song
 
 @@count = 0
-@@genres = [].to_set
-@@Artists = [].to_set
+@@genres = Set[]
+@@Artists = Set[]
 
 def initialize(name, artist, genre)
 
