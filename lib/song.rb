@@ -6,27 +6,32 @@ class Song
 
 def initialize(name, artist, genre)
 
-@name = name
+  @name = name
 
-@artist = artist
-@@artists << @artist
+  @artist = artist
+  @@artists << @artist
 
   @genre = genre
   @@genres << @genre
 
-@@count += 1
+  @@count += 1
 end
 
+def name=(name)
+  @name = name
+end
 
+def artist=(artist)
+  @artist = artist
+  @@artists << @artist
+end
 
-def genre=(name)
-@genre = name
+def genre=(genre)
+@genre = genre
 @@genres << @genre
 end
 
-def genre
-  @genre
-end
+attr_reader :name, :artist, :genre
 
 def self.count
 @@count
