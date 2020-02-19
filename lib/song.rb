@@ -8,7 +8,7 @@ end
 
 attr_accessor :artist, :genre, :name
 
-def this.count
+def self.count
 @@count
 end
 
