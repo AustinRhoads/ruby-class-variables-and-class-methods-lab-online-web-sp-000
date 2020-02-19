@@ -7,7 +7,9 @@ def initialize
 @@count += 1
 end
 
-attr_accessor :artist, :genre, :name
+attr_accessor :artist, :name
+
+
 
 def self.count
 @@count
