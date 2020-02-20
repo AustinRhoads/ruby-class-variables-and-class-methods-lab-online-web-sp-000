@@ -47,7 +47,7 @@ end
 
 def self.genre_count
   hash = Hash.new
-  hash = @@genres.each do |genre|
+  @@genres.each do |genre|
     if hash.has_key?(genre) == false
     hash[genre]
     hash[genre] = @@genres.count(genre)
