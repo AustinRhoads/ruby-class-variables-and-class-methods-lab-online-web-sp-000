@@ -57,7 +57,14 @@ def self.genre_count
 end
 
 def self.artist_count
-
+  hash = Hash.new
+  @@artists.each do |artist|
+    if hash.has_key?(artist) == false
+    hash[artist]
+    hash[artist] = @@artists.count(artist)
+    end
+  end
+  hash
 end
 
 
