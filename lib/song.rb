@@ -53,6 +53,7 @@ def self.genre_count
     hash[genre] = @@genres.count(genre)
     end
   end
+  hash
 end
 
 def self.artist_count
